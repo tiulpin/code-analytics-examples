@@ -11,6 +11,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: QodanaScan@1
+- task: QodanaScan@2022
   inputs:
     args: '--project-dir,js,--linter,jetbrains/qodana-js:latest'
