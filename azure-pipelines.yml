@@ -13,4 +13,4 @@ pool:
 steps:
 - task: QodanaScan@2022
   inputs:
-    args: '--linter,jetbrains/qodana-js:latest,--log-level,debug,-e,QODANA_BRANCH=$BUILD_SOURCEBRANCHNAME'
+    args: '--linter,jetbrains/qodana-js:latest,--log-level,debug,-e,QODANA_BRANCH=$BUILD_SOURCEBRANCHNAME,-e,QODANA_REMOTE_URL=$BUILD_REPOSITORY_URI'
